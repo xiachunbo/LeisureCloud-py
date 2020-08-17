@@ -8,7 +8,7 @@ from setuptools import setup
 '''
 
 setup(
-    name="LeisureCloud-Math",  #pypi中的名称，pip或者easy_install安装时使用的名称，或生成egg文件的名称
+    name="leisure",  #pypi中的名称，pip或者easy_install安装时使用的名称，或生成egg文件的名称
     version="1.0",
     author="xiaobobo",
     author_email="853233432@qq.com",
@@ -27,7 +27,7 @@ setup(
     # 添加这个选项，在windows下Python目录的scripts下生成exe文件
     # 注意：模块与函数之间是冒号:
     entry_points={'console_scripts': [
-        'leisure_run = LeisureCloud-Math.main:main',
+        'leisure_run = leisure.main:main',
     ]},
 
     # long_description=read('README.md'),
