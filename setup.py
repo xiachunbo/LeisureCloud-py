@@ -22,6 +22,10 @@ setup(
     install_requires=[
         'redis>=2.10.5',
         'setuptools>=16.0',
+        'xlrd>=1.2.0',
+        'xlwt>=1.3.0',
+        'xlutils>=2.0.0',
+        'requests>=2.24.0',
     ],
 
     # 添加这个选项，在windows下Python目录的scripts下生成exe文件

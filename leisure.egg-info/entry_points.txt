@@ -1,0 +1,3 @@
+[console_scripts]
+leisure_run = leisure.main:main
+

@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: leisure
+Version: 1.0
+Summary: This is a service
+Home-page: UNKNOWN
+Author: xiaobobo
+Author-email: 853233432@qq.com
+License: v1
+Description: UNKNOWN
+Keywords: leisure
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
