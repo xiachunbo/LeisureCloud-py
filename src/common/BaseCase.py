@@ -243,6 +243,7 @@ def base_assert(self, i, url, header, request_data, expect, res, data_case):
     return isSuccess
 
 def test1(self):
+    print '111'
     self.log.info('unittest')
 
 if __name__ == '__main__':

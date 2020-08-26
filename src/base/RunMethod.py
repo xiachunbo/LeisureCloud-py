@@ -3,7 +3,7 @@
 
 import requests
 import urllib3
-
+import json
 
 class RunMethod:
     def __init__(self):
@@ -45,15 +45,15 @@ class RunMethod:
 
 
 if __name__ == '__main__':
-    url = 'http://httpbin.org/post'
+    url = ' http://localhost:1855/processDefinition/processDefinitionByType'
     data = {
-        'cart': '11'
+        'parem': 'xxx'
     }
     header = {
-        "Content-Type": "text/html123123; charset=utf-8",
+        "Content-Type": "text/html; charset=utf-8",
         "Accept-Charset": "utf-8"
     }
     run = RunMethod()
-    run_test = run.run_main(method="Post", url=url, data=data, header=header)
-    res_json = run_test.json()
-    print(run_test.json())
+    run_test = run.run_main(method="Get", url=url, data=data, header=header)
+    lottery_message = json.dumps(run_test.json(), ensure_ascii=False)
+    print(lottery_message)

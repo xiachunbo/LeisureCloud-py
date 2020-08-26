@@ -26,12 +26,15 @@ setup(
         'xlwt>=1.3.0',
         'xlutils>=2.0.0',
         'requests>=2.24.0',
+        'openpyxl>=2.6.4',
+        'apscheduler>=3.6.3',
+
     ],
 
     # 添加这个选项，在windows下Python目录的scripts下生成exe文件
     # 注意：模块与函数之间是冒号:
     entry_points={'console_scripts': [
-        'leisure_run = leisure.main:main',
+        'leisure_run = leisure.src:src',
     ]},
 
     # long_description=read('README.md'),

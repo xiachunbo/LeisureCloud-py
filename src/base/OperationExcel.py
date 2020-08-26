@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import sys
+if sys.getdefaultencoding() != 'utf-8':
+    reload(sys)
+    sys.setdefaultencoding('utf-8')
 import xlrd
 import xlwt
 from xlutils.copy import copy
@@ -116,9 +120,9 @@ class OperationExcel:
         return style
 
 if __name__ == '__main__':
-    opera = OperationExcel(file_path=u'/Users/xiaobobo/Desktop/设计表.xlsx', sheet_name=u'表名')
+    opera = OperationExcel(file_path=u'/Users/xiaobobo/Desktop/test.xls', sheet_name=u'表名')
     opera.get_data()
     opera.get_cell_value(1, 2)
-    print opera.get_row_value(1)
+    #print opera.get_row_value(1)
     print(json.dumps(opera.get_row_value(1)).decode("unicode-escape"))
-    #opera.write_value(3, 1, 'ceshi样式')
+    opera.write_value(3, 1, 'test')
