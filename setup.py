@@ -28,7 +28,9 @@ setup(
         'requests>=2.24.0',
         'openpyxl>=2.6.4',
         'apscheduler>=3.6.3',
-
+        'DBUtils>=1.3',
+        'psycopg2-binary>=2.8.5',
+        'MySQL-python>=1.2.5'
     ],
 
     # 添加这个选项，在windows下Python目录的scripts下生成exe文件
