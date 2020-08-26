@@ -1,0 +1,10 @@
+2020-08-26 15:15:58,015 - /Users/xiaobobo/Documents/LeisureCloud-py/src/common/Logger.py[line:38] - DEBUG: debug
+2020-08-26 15:15:58,016 - /Users/xiaobobo/Documents/LeisureCloud-py/src/common/Logger.py[line:39] - INFO: info
+2020-08-26 15:15:58,016 - /Users/xiaobobo/Documents/LeisureCloud-py/src/common/Logger.py[line:40] - WARNING: 警告
+2020-08-26 15:15:58,016 - /Users/xiaobobo/Documents/LeisureCloud-py/src/common/Logger.py[line:41] - ERROR: 报错
+2020-08-26 15:15:58,016 - /Users/xiaobobo/Documents/LeisureCloud-py/src/common/Logger.py[line:42] - CRITICAL: 严重
+2020-08-26 15:16:06,297 - /Users/xiaobobo/Documents/LeisureCloud-py/src/common/Logger.py[line:38] - DEBUG: debug
+2020-08-26 15:16:06,297 - /Users/xiaobobo/Documents/LeisureCloud-py/src/common/Logger.py[line:39] - INFO: info
+2020-08-26 15:16:06,300 - /Users/xiaobobo/Documents/LeisureCloud-py/src/common/Logger.py[line:40] - WARNING: 警告
+2020-08-26 15:16:06,300 - /Users/xiaobobo/Documents/LeisureCloud-py/src/common/Logger.py[line:41] - ERROR: 报错
+2020-08-26 15:16:06,300 - /Users/xiaobobo/Documents/LeisureCloud-py/src/common/Logger.py[line:42] - CRITICAL: 严重
