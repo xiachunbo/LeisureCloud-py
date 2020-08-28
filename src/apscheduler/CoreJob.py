@@ -10,6 +10,9 @@ from apscheduler.jobstores.memory import MemoryJobStore
 from apscheduler.executors.pool import ThreadPoolExecutor, ProcessPoolExecutor
 from apscheduler.events import EVENT_JOB_MAX_INSTANCES, EVENT_JOB_ERROR, EVENT_JOB_MISSED, EVENT_JOB_EXECUTED
 class CoreJob:
+    root_path = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+    log = Logger(root_path + '/logs/all.log', level='info')
+
     def __init__(self):
         jobstores = {
             'default': MemoryJobStore()
@@ -27,7 +30,7 @@ class CoreJob:
         self.scheduler = BlockingScheduler(jobstores=jobstores, executors=executors, job_defaults=job_defaults, timezone=utc)
         self.scheduler.add_listener(self.my_listener, EVENT_JOB_EXECUTED | EVENT_JOB_ERROR)
     def my_job1(self):
-        print 'my_job1 is running, Now is %s' % datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        self.log.logger.info('my_job1 is running, Now is %s' % datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
     def my_listener(self, event):
          if event.exception:

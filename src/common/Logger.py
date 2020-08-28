@@ -15,6 +15,7 @@ class Logger(object):
 
     def __init__(self,filename,level='info',when='D',backCount=3,fmt='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'):
         self.logger = logging.getLogger(filename)
+        self.logger.setLevel(logging.INFO)
         format_str = logging.Formatter(fmt)#设置日志格式
         #self.logger.setLevel(self.level_relations.get(level))#设置日志级别
         sh = logging.StreamHandler()#往屏幕上输出
@@ -34,7 +35,7 @@ class Logger(object):
 
 if __name__ == '__main__':
     root_path = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-    log = Logger(root_path + '/logs/all.log',level='debug')
+    log = Logger(root_path + '/logs/all.log',level='info')
     log.logger.debug('debug')
     log.logger.info('info')
     log.logger.warning('警告')
